@@ -1,8 +1,10 @@
-# NBDEV SUPAAAAH TEST
-> Once upon a time in the west.
+# Finance
+> Analysing portfolio's with python & WB data
 
 
 This file will become your README and also the index of your documentation.
+
+First you need to clone the repository. Use git clone.
 
 ## Install
 
