@@ -9,8 +9,8 @@ def say_hello(to):
 
 # Cell
 #import all relevant libraries
-import all the relevant libraries
-import codecademylib3_seaborn
+#import all the relevant libraries
+#import codecademylib3_seaborn
 import pandas as pd
 import pandas_datareader.data as web
 import pandas_datareader.wb as wb

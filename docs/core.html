@@ -1,6 +1,6 @@
 ---
 
-title: module name here
+title: Finance
 
 
 keywords: fastai
@@ -57,6 +57,138 @@ nb_path: "00_core.ipynb"
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">gold_prices</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;gold_prices.csv&#39;</span><span class="p">)</span>
+<span class="n">crude_oil_prices</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;crude_oil_prices.csv&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>RANDOM TEXT FOR TEST</p>
+
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">start</span><span class="o">=</span><span class="n">datetime</span><span class="p">(</span><span class="mi">1999</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">end</span><span class="o">=</span><span class="n">datetime</span><span class="p">(</span><span class="mi">2019</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">nasdaq_data</span><span class="o">=</span><span class="n">web</span><span class="o">.</span><span class="n">DataReader</span><span class="p">(</span><span class="s1">&#39;NASDAQ100&#39;</span><span class="p">,</span> <span class="s1">&#39;fred&#39;</span><span class="p">,</span> <span class="n">start</span><span class="p">,</span> <span class="n">end</span><span class="p">)</span>
+<span class="n">sap_data</span><span class="o">=</span><span class="n">web</span><span class="o">.</span><span class="n">DataReader</span><span class="p">(</span><span class="s1">&#39;SP500&#39;</span><span class="p">,</span> <span class="s1">&#39;fred&#39;</span><span class="p">,</span> <span class="n">start</span><span class="p">,</span> <span class="n">end</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">gdp_data</span><span class="o">=</span><span class="n">wb</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="n">indicator</span><span class="o">=</span><span class="s2">&quot;NY.GDP.MKTP.CD&quot;</span><span class="p">,</span> <span class="n">country</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;US&#39;</span><span class="p">],</span> <span class="n">start</span><span class="o">=</span><span class="n">start</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="n">end</span><span class="p">)</span>
+
+<span class="n">export_data</span><span class="o">=</span><span class="n">wb</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="n">indicator</span><span class="o">=</span><span class="s2">&quot;NE.EXP.GNFS.CN&quot;</span><span class="p">,</span> <span class="n">country</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;US&#39;</span><span class="p">],</span> <span class="n">start</span><span class="o">=</span><span class="n">start</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="n">end</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="log_return" class="doc_header"><code>log_return</code><a href="https://github.com/PeritotZena/hellonbdev/tree/master/hellonbdev/core.py#L22" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>log_return</code>(<strong><code>prices</code></strong>)</p>
+</blockquote>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">gold_returns</span><span class="o">=</span><span class="n">log_return</span><span class="p">(</span><span class="n">gold_prices</span><span class="p">[</span><span class="s1">&#39;Gold_Price&#39;</span><span class="p">])</span>
+<span class="n">crude_oil_returns</span> <span class="o">=</span> <span class="n">log_return</span><span class="p">(</span><span class="n">crude_oil_prices</span><span class="p">[</span><span class="s1">&#39;Crude_Oil_Price&#39;</span><span class="p">])</span>
+<span class="n">nasdaq_returns</span> <span class="o">=</span> <span class="n">log_return</span><span class="p">(</span><span class="n">nasdaq_data</span><span class="p">[</span><span class="s1">&#39;NASDAQ100&#39;</span><span class="p">])</span>
+<span class="n">sap_returns</span> <span class="o">=</span> <span class="n">log_return</span><span class="p">(</span><span class="n">sap_data</span><span class="p">[</span><span class="s1">&#39;SP500&#39;</span><span class="p">])</span>
+<span class="n">gdp_returns</span> <span class="o">=</span> <span class="n">log_return</span><span class="p">(</span><span class="n">gdp_data</span><span class="p">[</span><span class="s1">&#39;NY.GDP.MKTP.CD&#39;</span><span class="p">])</span>
+<span class="n">export_returns</span> <span class="o">=</span> <span class="n">log_return</span><span class="p">(</span><span class="n">export_data</span><span class="p">[</span><span class="s1">&#39;NE.EXP.GNFS.CN&#39;</span><span class="p">])</span>
+<span class="c1">#calculate variances</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">gold_returns</span><span class="o">.</span><span class="n">var</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">crude_oil_returnss</span><span class="o">.</span><span class="n">var</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">nasdaq_returns</span><span class="o">.</span><span class="n">var</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">sap_returns</span><span class="o">.</span><span class="n">var</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">gdp_returns</span><span class="o">.</span><span class="n">var</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">export_returns</span><span class="o">.</span><span class="n">var</span><span class="p">())</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
 
 </div>
     {% endraw %}
