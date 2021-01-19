@@ -12,7 +12,7 @@ First you need to clone the repository. Use git clone.
 
 ## How to use
 
-Fill me in please! Don't forget code examples:
+Just trying out some stuff here for the documentation
 
 ```python
 1+1
