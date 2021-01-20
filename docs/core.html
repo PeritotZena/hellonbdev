@@ -40,7 +40,7 @@ nb_path: "00_core.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="say_hello" class="doc_header"><code>say_hello</code><a href="https://github.com/PeritotZena/hellonbdev/tree/master/hellonbdev/core.py#L6" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>say_hello</code>(<strong><code>to</code></strong>)</p>
+<h4 id="say_hello" class="doc_header"><code>say_hello</code><a href="https://github.com/Zena3/hellonbdev/tree/master/hellonbdev/core.py#L6" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>say_hello</code>(<strong><code>to</code></strong>)</p>
 </blockquote>
 <p>Say hello to somebody</p>
 
@@ -88,7 +88,7 @@ nb_path: "00_core.ipynb"
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>RANDOM TEXT FOR TEST</p>
+<p>After importing the <code>data from a csv</code>, we want to import some more data from the World Bank API.</p>
 
 </div>
 </div>
@@ -143,7 +143,7 @@ nb_path: "00_core.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="log_return" class="doc_header"><code>log_return</code><a href="https://github.com/PeritotZena/hellonbdev/tree/master/hellonbdev/core.py#L22" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>log_return</code>(<strong><code>prices</code></strong>)</p>
+<h4 id="log_return" class="doc_header"><code>log_return</code><a href="https://github.com/Zena3/hellonbdev/tree/master/hellonbdev/core.py#L22" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>log_return</code>(<strong><code>prices</code></strong>)</p>
 </blockquote>
 
 </div>
@@ -170,20 +170,20 @@ nb_path: "00_core.ipynb"
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">gold_returns</span><span class="o">=</span><span class="n">log_return</span><span class="p">(</span><span class="n">gold_prices</span><span class="p">[</span><span class="s1">&#39;Gold_Price&#39;</span><span class="p">])</span>
-<span class="n">crude_oil_returns</span> <span class="o">=</span> <span class="n">log_return</span><span class="p">(</span><span class="n">crude_oil_prices</span><span class="p">[</span><span class="s1">&#39;Crude_Oil_Price&#39;</span><span class="p">])</span>
-<span class="n">nasdaq_returns</span> <span class="o">=</span> <span class="n">log_return</span><span class="p">(</span><span class="n">nasdaq_data</span><span class="p">[</span><span class="s1">&#39;NASDAQ100&#39;</span><span class="p">])</span>
-<span class="n">sap_returns</span> <span class="o">=</span> <span class="n">log_return</span><span class="p">(</span><span class="n">sap_data</span><span class="p">[</span><span class="s1">&#39;SP500&#39;</span><span class="p">])</span>
-<span class="n">gdp_returns</span> <span class="o">=</span> <span class="n">log_return</span><span class="p">(</span><span class="n">gdp_data</span><span class="p">[</span><span class="s1">&#39;NY.GDP.MKTP.CD&#39;</span><span class="p">])</span>
-<span class="n">export_returns</span> <span class="o">=</span> <span class="n">log_return</span><span class="p">(</span><span class="n">export_data</span><span class="p">[</span><span class="s1">&#39;NE.EXP.GNFS.CN&#39;</span><span class="p">])</span>
-<span class="c1">#calculate variances</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># gold_returns=log_return(gold_prices[&#39;Gold_Price&#39;])</span>
+<span class="c1"># crude_oil_returns = log_return(crude_oil_prices[&#39;Crude_Oil_Price&#39;])</span>
+<span class="c1"># nasdaq_returns = log_return(nasdaq_data[&#39;NASDAQ100&#39;])</span>
+<span class="c1"># sap_returns = log_return(sap_data[&#39;SP500&#39;])</span>
+<span class="c1"># gdp_returns = log_return(gdp_data[&#39;NY.GDP.MKTP.CD&#39;])</span>
+<span class="c1"># export_returns = log_return(export_data[&#39;NE.EXP.GNFS.CN&#39;])</span>
+<span class="c1"># #calculate variances</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">gold_returns</span><span class="o">.</span><span class="n">var</span><span class="p">())</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">crude_oil_returnss</span><span class="o">.</span><span class="n">var</span><span class="p">())</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">nasdaq_returns</span><span class="o">.</span><span class="n">var</span><span class="p">())</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">sap_returns</span><span class="o">.</span><span class="n">var</span><span class="p">())</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">gdp_returns</span><span class="o">.</span><span class="n">var</span><span class="p">())</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">export_returns</span><span class="o">.</span><span class="n">var</span><span class="p">())</span>
+<span class="c1"># print(gold_returns.var())</span>
+<span class="c1"># print(crude_oil_returnss.var())</span>
+<span class="c1"># print(nasdaq_returns.var())</span>
+<span class="c1"># print(sap_returns.var())</span>
+<span class="c1"># print(gdp_returns.var())</span>
+<span class="c1"># print(export_returns.var())</span>
 </pre></div>
 
     </div>
@@ -195,7 +195,7 @@ nb_path: "00_core.ipynb"
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Again a test for notebook information.</p>
+<p>Again a test for notebook information. TEST2</p>
 
 </div>
 </div>
